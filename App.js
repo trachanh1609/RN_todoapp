@@ -11,6 +11,15 @@ export default class App extends React.Component {
         {
           task: 'Learn RN',
         },
+        {
+          task: 'Do 10 Pushups',
+        },
+        {
+          task: 'Drink 2litre of water',
+        },
+        {
+          task: 'Learn Redux',
+        },
       ],
     }
   }
@@ -19,7 +28,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Hello React Native!</Text>
-        <TaskList />
+        <TaskList todos={this.state.todos}/>
       </View>
     );
   }
